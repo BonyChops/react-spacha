@@ -2,7 +2,8 @@
   "name": "react-spacha",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext ts,tsx .",
@@ -12,12 +13,11 @@
     "build-storybook": "build-storybook"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Bony_Chops",
+  "license": "MIT",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "spacha": "^1.0.0"
+    "canvas": "^2.10.1",
+    "spacha": "file:../spacha"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
@@ -42,9 +42,18 @@
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-storybook": "^0.6.4",
     "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^2.79.0",
     "rollup-plugin-dts": "^4.2.2",
     "tslib": "^2.4.0",
     "typescript": "^4.8.3"
-  }
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "types",
+    "dist"
+  ]
 }

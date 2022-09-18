@@ -1,16 +1,18 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Spacha } from './Spacha';
+import { SpachaImage } from './SpachaImage';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Spacha/Spacha',
-  component: Spacha,
-} as ComponentMeta<typeof Spacha>;
+  title: 'Spacha/SpachaImage',
+  component: SpachaImage,
+} as ComponentMeta<typeof SpachaImage>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Spacha> = (args) => <Spacha {...args} />;
+const Template: ComponentStory<typeof SpachaImage> = (args) => (
+  <SpachaImage {...args} />
+);
 
 export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
