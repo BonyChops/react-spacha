@@ -11,3 +11,7 @@ npm run storybook
 ```
 
 ### Build storybook
+
+```
+npm run build-storybook
+```
