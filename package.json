@@ -19,6 +19,14 @@
     "canvas": "^2.10.1",
     "spacha": "^1.0.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BonyChops/react-spacha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BonyChops/react-spacha/issues"
+  },
+  "homepage": "https://spacha.b7s.dev",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@rollup/plugin-commonjs": "^22.0.2",
