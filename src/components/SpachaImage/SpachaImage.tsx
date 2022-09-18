@@ -6,6 +6,7 @@ export type SpachaImageProps = SpachaBaseProps & {
   width?: number;
   height?: number;
   heightAutoFix?: boolean;
+  key?: string;
 };
 
 export const SpachaImage: FC<SpachaImageProps> = (props) => {
@@ -14,5 +15,10 @@ export const SpachaImage: FC<SpachaImageProps> = (props) => {
     const canvasContext = canvas.getContext('2d') as CanvasRenderingContext2D;
     new SpachaImageCore(canvasContext, props);
   }, [JSON.stringify(props)]);
-  return <canvas id="spc-canvas" width={600}></canvas>;
+  return (
+    <canvas
+      id={`spc-canvas${props.key ? `-${props.key}` : ''}`}
+      width={600}
+    ></canvas>
+  );
 };
