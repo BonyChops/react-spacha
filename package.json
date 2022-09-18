@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "canvas": "^2.10.1",
-    "spacha": "file:../spacha"
+    "spacha": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
@@ -42,8 +42,6 @@
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-storybook": "^0.6.4",
     "prettier": "^2.7.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "rollup": "^2.79.0",
     "rollup-plugin-dts": "^4.2.2",
     "tslib": "^2.4.0",
